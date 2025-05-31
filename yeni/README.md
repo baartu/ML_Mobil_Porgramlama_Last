@@ -10,7 +10,8 @@ Bu depoda, kalp hastalığı riskini tahmin etmek üzere geliştirilmiş **makin
 2. [Motivasyon](#motivasyon)  
 3. [Özellikler](#özellikler)  
 4. [Veri Seti](#veri-seti)  
-5. [Kullanılan Algoritmalar](#kullanılan-algoritmalar)  
+5. [Kullanılan Algoritmalar](#kullanılan-algoritmalar)
+6. [Sonuçlar](#sonuclar) 
 ---
 
 ## Proje Hakkında
@@ -104,4 +105,18 @@ Bu proje, kalp hastalığı riskini öngörmek üzere geliştirilen bir makine �
 
 9. **k-Nearest Neighbors (k-NN)**  
    - Yeni örneği, eğitim setindeki *k* en yakın komşusunun sınıflarına göre sınıflandırır.  
-   - Basit ama hesaplama maliyeti ve bellek gereksinimi yüksek olabilir.  
+   - Basit ama hesaplama maliyeti ve bellek gereksinimi yüksek olabilir.
+
+## Sonuçlar
+| Model               | Accuracy (%) | F₁-Score (%) |
+| ------------------- | ------------ | ------------ |
+| ZeroR               | 54.95        | 70.92        |
+| OneR                | 58.24        | 66.07        |
+| Naive Bayes         | 83.52        | 84.21        |
+| J48 Karar Ağacı     | 69.23        | 70.83        |
+| Random Forest       | 82.42        | 84.00        |
+| Lojistik Regresyon  | 81.32        | 83.17        |
+| k-NN                | 86.81        | 88.00        |
+| Çoklu Algılayıcılar | 46.15        | 3.92         |
+| DVM (SVM)           | 70.33        | 76.92        |
+  
