@@ -46,7 +46,7 @@ Bu proje, kalp hastalığı riskini öngörmek üzere geliştirilen bir makine �
 ## Veri Seti
 
 - Kaynak: [Kaggle – Heart Disease UCI Dataset](https://www.kaggle.com/ronitf/heart-disease-uci)  
-- Toplam 303 örnek; 14 öznitelik + 1 hedef (Target).  
+- Toplam 303 örnek; 13 öznitelik + 1 hedef (Target).  
 - Erkek: 207, Kadın: 96.  
 - Riskli (Target = 1): 165 örnek; Risksiz (Target = 0): 138 örnek.  
 
