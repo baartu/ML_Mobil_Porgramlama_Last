@@ -11,7 +11,7 @@ Bu depoda, kalp hastalığı riskini tahmin etmek üzere geliştirilmiş **makin
 3. [Özellikler](#özellikler)  
 4. [Veri Seti](#veri-seti)  
 5. [Kullanılan Algoritmalar](#kullanılan-algoritmalar)
-6. [Sonuçlar](#sonuclar) 
+6. [Sonuçlar](#sonuçlar) 
 ---
 
 ## Proje Hakkında
@@ -108,15 +108,16 @@ Bu proje, kalp hastalığı riskini öngörmek üzere geliştirilen bir makine �
    - Basit ama hesaplama maliyeti ve bellek gereksinimi yüksek olabilir.
 
 ## Sonuçlar
-| Model               | Accuracy (%) | F₁-Score (%) |
-| ------------------- | ------------ | ------------ |
-| ZeroR               | 54.95        | 70.92        |
-| OneR                | 58.24        | 66.07        |
-| Naive Bayes         | 83.52        | 84.21        |
-| J48 Karar Ağacı     | 69.23        | 70.83        |
-| Random Forest       | 82.42        | 84.00        |
-| Lojistik Regresyon  | 81.32        | 83.17        |
-| k-NN                | 86.81        | 88.00        |
-| Çoklu Algılayıcılar | 46.15        | 3.92         |
-| DVM (SVM)           | 70.33        | 76.92        |
+| Model               | Accuracy (%) | Precision (%) | Recall (%) | F₁-Score (%) |
+|---------------------|--------------|---------------|------------|--------------|
+| ZeroR               | 54.95        | 54.95         | 100.00     | 70.92        |
+| OneR                | 58.24        | 59.68         | 74.00      | 66.07        |
+| Naive Bayes         | 83.52        | 88.89         | 80.00      | 84.21        |
+| J48 Decision Tree   | 69.23        | 73.91         | 68.00      | 70.83        |
+| Random Forest       | 82.42        | 84.00         | 84.00      | 84.00        |
+| Logistic Regression | 81.32        | 82.35         | 84.00      | 83.17        |
+| k-NN                | 86.81        | 88.00         | 88.00      | 88.00        |
+| Çoklu Algılayıcılar | 46.15        | 100.00        | 2.00       | 3.92         |
+| SVM                 | 70.33        | 67.16         | 90.00      | 76.92        |
+
   
